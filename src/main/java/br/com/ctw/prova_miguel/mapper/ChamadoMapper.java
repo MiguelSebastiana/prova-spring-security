@@ -16,9 +16,12 @@ public class ChamadoMapper {
                 entity.getTitulo(),
                 entity.getDescricao(),
                 entity.getStatus(),
+                entity.getPrioridade(),
                 entity.getCliente(),
                 entity.getTecnico(),
-                entity.getRespostas()
+                entity.getRespostas(),
+                entity.getDataCriacao(),
+                entity.getDataAtualizacao()
         );
     }
 
@@ -32,8 +35,4 @@ public class ChamadoMapper {
                 .respostas(request.respostas())
                 .build();
     }
-
-    //public List<ChamadoResponseDTO> toList(ChamadoEntity entity){
-//
-    //}
 }
